@@ -1,115 +1,40 @@
-[![license](https://img.shields.io/badge/License-MIT-purple.svg?style=?style=flat-square)](LICENSE) [![database](https://img.shields.io/badge/-14.16.0-white.svg?style=?style=flat-square&logo=node.js)](DATABASE) [![database](https://img.shields.io/badge/Build-Success-brightgreen.svg?style=?style=flat-square&logo=appveyor&logo=mysql)](BUILD)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# To-Do App
+## Getting Started
 
-Build a to-do app.
-
-## Instructions
-
-1. Clone the repository.
-2. Install and run the backend server.
-3. Complete all requirements.
-4. Submit your project.
-
-*P.S. Do not forget to commit your changes.*
-
-## Test Duration
-
-- 2 days
-
-## Prerequisites
-
-- Node.js (v14 LTS or higher)
-- Next.js (v13+)
-
-## Run the backend server
+First, run the development server:
 
 ```bash
-cd server
-npm install
-npm run start
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-**Output**:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-Server listening on port http://localhost:4000
-```
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## API documentation
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-[Postman Collection (⬇️Download)](https://api.postman.com/collections/2008200-b6fd706b-c4ec-498a-b044-50e0af95505f?access_key=PMAT-01GMAG1BQ7GD4P89M2Q2KFFT51)
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-| Method | Auth | Endpoint | Body | Description |
-| ------ | ---- | -------- | ---- | ----------- |
-| GET | No | /users | | Get all users |
-| GET | Yes | /todos | | Get user todos |
-| POST | Yes | /todos | task `string` | Create a new todo |
-| PUT | Yes | /todos/:id | | Toggle todo completion |
-| DELETE | Yes | /todos/:id | | Delete a todo |
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-**Body type**: `application/json`
+## Learn More
 
-*Example body*:
+To learn more about Next.js, take a look at the following resources:
 
-```json
-{
-  "task": "Buy milk"
-}
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Authentication
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The API sometimes requires authentication. the authentication type is `Basic Auth`
+## Deploy on Vercel
 
-You can find the credentials in the `server/data/users.json` file.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-**Example curl**:
-
-```bash
-curl --location --request GET 'http://localhost:4000/todos' \
---header 'Authorization: Basic enVja2VyOjEyMzQ1Ng=='
-```
-
-**Example axios**:
-
-```js
-await axios.post(endpoint, {}, {
-  auth: {
-    username: 'zucker',
-    password: '123456'
-  }
-});
-```
-
-### Available users
-
-| Avatar | Username | Password |
-| ------ | -------- | -------- |
-| [<img src="https://robohash.org/zucker-ping.png" width="50">]() | zucker | 123456 |
-| [<img src="https://robohash.org/felon-must.png" width="50">]() | felon | 123123 |
-| [<img src="https://robohash.org/robon-wood.png" width="50">]() | robon | secret |
-
-## Requirements
-
-### User login page
-
-- User should be able to select a user from the list of users.
-- User should be able to see user details (name, avatar).
-- User required to enter only password to login after selecting his account from the list.
-
-### User dashboard page
-
-- User should be able to see the list of todos for the selected user.
-- User should be able to create a new todo.
-- User should be able to toggle todo completion.
-- User should be able to delete a todo.
-
-### User Account
-
-- User should be able to view his name and avatar in the app header.
-- User should be able to logout.
-
----
-
-*Good luck!👍*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

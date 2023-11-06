@@ -1,0 +1,30 @@
+{
+  "name": "to-do-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.14.16",
+    "@mui/joy": "5.0.0-beta.13",
+    "@mui/lab": "5.0.0-alpha.151",
+    "@mui/material": "5.14.16",
+    "axios": "1.6.0",
+    "next": "14.0.1",
+    "prop-types": "15.8.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "recoil": "0.7.7",
+    "recoil-persist": "5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.1"
+  }
+}

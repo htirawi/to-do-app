@@ -1,0 +1,14 @@
+export const LOGIN = "Login";
+export const DASHBOARD = "dashboard";
+export const LOGOUT = "Logout";
+export const TODO = "Todo";
+export const SELECT_USER = "Please select a user";
+export const PASSWORD = "Password";
+export const GET_STARTED = "Let's get started";
+export const RECOIL_PERSIST_KEY = 'todo-app';
+export const KEEP_GOING = "Keep Going..."; 
+export const ADD_TODO = "Add Todo";
+export const COMPLETED = "Completed";
+export const CREATE_TODO_PLACEHOLDER = "Create a todo...";
+export const DELETE = "Delete";
+export const EDIT = "Edit";
